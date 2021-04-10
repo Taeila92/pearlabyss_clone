@@ -1,0 +1,125 @@
+/* COMMON */
+body{
+  font-family:'Noto Sans KR', sans-serif;
+  font-size: 14px;
+  color: #969696;
+  box-sizing: border-box;
+}
+.inner{
+  position: relative;
+}
+
+
+/* HEADER */
+header{
+  
+}
+header .inner {
+  background-color: orange;
+}
+header .inner:hover {
+  background-color: #fff;
+  color: #000;
+}
+header .inner .logo {
+  height: 68px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background-image: url('../images/index_logo_white.svg');
+  background-size: 150px auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 170px;
+  height: 68px;
+}
+header .inner:hover .logo{
+  background-image: url('../images/index_logo_black.svg');
+}
+header .menu {
+  display: flex;
+  justify-content: center;
+}
+header .menu .item{
+
+}
+header .menu .item .item__name{
+  padding: 0 30px;
+  font-size: 16px;
+  color: #fff;
+  height: 68px;
+  align-items: center;
+  line-height: 68px;
+  cursor: pointer;
+  transition: .2s;
+}
+header .menu .item .item__contents{
+ align-items: center;
+ display: none;
+ margin: 10px 0;
+}
+header .inner:hover .menu .item .item__contents{
+  display: block;
+}
+header .inner:hover .menu .item .item__name{
+  color: #000;
+}
+header .inner .menu .item:hover .item__name{
+  border-bottom: 2px solid #000;
+}
+header .menu .item .item__contents ul {
+
+}
+header .menu .item .item__contents ul li{
+  padding: 6px 0;
+  text-align: center;
+  cursor: pointer;
+  transition: .4s;
+  color: #969696;
+}
+header .menu .item .item__contents ul li:hover{
+  color: #000;
+}
+header .header_option {
+  width: 110px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+header .header_option .language {
+  display: flex;
+  justify-content: center;
+  line-height: 68px;
+}
+header .header_option .language li{
+  cursor: pointer;
+  color: #999;
+  position: relative;
+  transition: .4s;
+  font-size: 13px;
+  padding: 0 10px 0;
+}
+header .header_option .language li:first-child{
+  color: #fff;
+}
+header .inner:hover .header_option .language li:first-child {
+  color: #000;
+}
+header .header_option .language li:hover{
+  color: #000;
+}
+header .header_option .language li::before{
+  content: "";
+  width: 1px;
+  height: 6px;
+  background-color: #999;
+  position: absolute;
+  transform: translateX(-10px);
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+header .header_option .language li:first-child:before{
+  display: none;
+}
