@@ -7,90 +7,127 @@
 
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"> <!-- reset css-->
+  <!-- Material icons-->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> 
+  <!-- SWIPER -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <!-- reset css-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"> 
   <link rel="stylesheet" href="css/main.css">
+
+  <script defer src="/js/main.js"></script>
 
   <title>펄어비스 공식 홈페이지 | Pearl Abyss</title>
 </head>
 <body>
-  <header>
-    <div class="inner">
-      <a href="/" class="logo">
-      </a>
-      <ul class="menu">
-        <li class="item">
-          <div class="item__name">소개</div>
-          <div class="item__contents">
-            <ul class="inner">
-              <li>펄어비스 소개</li>
-              <li>연구소</li>
-            </ul>
-          </div>
-        </li>
-        <li class="item">
-          <div class="item__name">게임</div>
-          <div class="item__contents">
-            <ul class="inner">
-              <li>검은사막</li>
-              <li>검은사막 모바일</li>
-              <li>섀도우 아레나</li>
-              <li>붉은사막</li>
-              <li>도깨비</li>
-              <li>플랜 8</li>
-            </ul>
-          </div>
-        </li>
-        <li class="item">
-          <div class="item__name">미디어</div>
-          <div class="item__contents">
-            <ul class="inner">
-              <li>보도자료</li>
-              <li>미디어 행사</li>
-            </ul>
-          </div>
-        </li>
-        <li class="item">
-          <div class="item__name">문화</div>
-          <div class="item__contents">
-            <ul class="inner">
-              <li>기업문화</li>
-              <li>복지</li>
-              <li>펄어비스인</li>
-              <li>펄어비스 소식</li>
-            </ul>
-          </div>
-        </li>
-        <li class="item">
-          <div class="item__name">채용</div>
-          <div class="item__contents">
-            <ul class="inner">
-              <li>채용소개</li>
-              <li>지원하기</li>
-            </ul>
-          </div>
-        </li>
-        <li class="item">
-          <div class="item__name">투자정보</div>
-          <div class="item__contents">
-            <ul class="inner">
-              <li>기업지배구조</li>
-              <li>주가정보</li>
-              <li>재무정보</li>
-              <li>공시・공고</li>
-              <li>IR 자료</li>
-            </ul>
-          </div>
-        </li>
-      </ul>
-      <div class="header_option">
-        <ul class="language">
-          <li>KOR</li>
-          <li>ENG</li>
+  <div class="body-wrap">
+
+    <!-- HEADER -->
+    <header>
+      <div class="inner">
+        <a href="/" class="logo">
+        </a>
+        <ul class="menu">
+          <li class="item">
+            <div class="item__name">소개</div>
+            <div class="item__contents">
+              <ul class="inner">
+                <li>펄어비스 소개</li>
+                <li>연구소</li>
+              </ul>
+            </div>
+          </li>
+          <li class="item">
+            <div class="item__name">게임</div>
+            <div class="item__contents">
+              <ul class="inner">
+                <li>검은사막</li>
+                <li>검은사막 모바일</li>
+                <li>섀도우 아레나</li>
+                <li>붉은사막</li>
+                <li>도깨비</li>
+                <li>플랜 8</li>
+              </ul>
+            </div>
+          </li>
+          <li class="item">
+            <div class="item__name">미디어</div>
+            <div class="item__contents">
+              <ul class="inner">
+                <li>보도자료</li>
+                <li>미디어 행사</li>
+              </ul>
+            </div>
+          </li>
+          <li class="item">
+            <div class="item__name">문화</div>
+            <div class="item__contents">
+              <ul class="inner">
+                <li>기업문화</li>
+                <li>복지</li>
+                <li>펄어비스인</li>
+                <li>펄어비스 소식</li>
+              </ul>
+            </div>
+          </li>
+          <li class="item">
+            <div class="item__name">채용</div>
+            <div class="item__contents">
+              <ul class="inner">
+                <li>채용소개</li>
+                <li>지원하기</li>
+              </ul>
+            </div>
+          </li>
+          <li class="item">
+            <div class="item__name">투자정보</div>
+            <div class="item__contents">
+              <ul class="inner">
+                <li>기업지배구조</li>
+                <li>주가정보</li>
+                <li>재무정보</li>
+                <li>공시・공고</li>
+                <li>IR 자료</li>
+              </ul>
+            </div>
+          </li>
         </ul>
+        <div class="header_option">
+          <ul class="language">
+            <li>KOR</li>
+            <li>ENG</li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </header>
-  
+    </header>
+
+    <section class="banner">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide" style="background-image:url('./images/banner1.jpg');">
+            <!-- <a href="javascript:void(0)"><img src="/images/banner1.jpg" alt=""></a> -->
+          </div>
+          <div class="swiper-slide" style="background-image:url('./images/banner2.jpg');">
+            <div class="title">
+              <h3>새롭고, 흥미롭고, 잊지 못할 모험을 선사하는<br>자기혁신적인 게임회사, 펄어비스</h3>
+           </div>
+            <!-- <a href="javascript:void(0)"><img src="/images/banner2.jpg" alt=""></a> -->
+          </div>
+          <div class="swiper-slide" style="background-image:url('./images/banner3.jpg');">
+            <!-- <a href="javascript:void(0)"><img src="/images/banner3.jpg" alt=""></a> -->
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-prev">
+        <span class="material-icons">chevron_left</span>
+      </div>
+      <div class="swiper-next">
+        <span class="material-icons">chevron_right</span>
+      </div>
+    </section>
+
+  </div>
 </body>
 </html>
