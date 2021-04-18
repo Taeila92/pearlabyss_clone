@@ -13,3 +13,25 @@ new Swiper('.banner .swiper-container',{
     nextEl: '.banner .swiper-next'
   }
 });
+const menuBarEl = document.querySelector('header .inner')
+window.addEventListener('scroll', _.throttle(function(){
+  console.log(window.scrollY)
+  if(window.scrollY > 68){
+    menuBarEl.classList.add('white');
+  }else{
+    menuBarEl.classList.remove('white');
+  }
+}, 300))
+
+
+
+const spyEls = document.querySelectorAll('.scroll-spy');
+spyEls.forEach(function(spyEl){
+  new ScrollMagic
+    .Scene({
+      triggerElement: spyEl, // 보여짐 여부를 감시할 요소를 지정
+      triggerHook: .8 // 뷰포트의 top 0  bottom 1 사이의 값 입력
+    })
+    .setClassToggle(spyEl, 'show')
+    .addTo(new ScrollMagic.Controller());
+});

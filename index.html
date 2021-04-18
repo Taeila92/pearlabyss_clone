@@ -9,11 +9,21 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&display=swap" rel="stylesheet">
+  
   <!-- Material icons-->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+   <!-- lodash.js-->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js" integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ==" crossorigin="anonymous"></script> 
+  
+  <!-- gsap & scrollToPlugin-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js" integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ==" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollToPlugin.min.js" integrity="sha512-kSI9CgGh60rJbNVeMJvfNX0UTKAq8LEOea/yKJQbFpIroxT7bf9/zUFXbnfsQP5F6xlOOHtCfBPgsE1ceiHnRw==" crossorigin="anonymous"></script>
+  
   <!-- SWIPER -->
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  
   <!-- reset css-->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"> 
   <link rel="stylesheet" href="css/main.css">
@@ -104,6 +114,8 @@
         </div>
       </div>
     </header>
+
+
     <section class="banner">
       <div class="swiper-container">
         <div class="swiper-wrapper">
@@ -159,12 +171,12 @@
         </ul>
       </div>
 
-      <div class="main-menu-wrap">
+      <div class="main-menu-wrap scroll-spy">
         <div class="inner">
           <ul class="main-items">
             <li class="item__content">
               <a href="javascript:void(0)">
-                <div class="content__box">
+                <div class="content__box back-to-position to-bottom delay-0">
                   <h4>펄어비스</h4>
                   <p>우리의 비전과 가치</p>
                   <div class="box__image">
@@ -175,7 +187,7 @@
             </li>
             <li class="item__content">
               <a href="javascript:void(0)">
-                <div class="content__box">
+                <div class="content__box back-to-position to-bottom delay-1">
                   <h4>연구소</h4>
                   <p>한계를 뛰어넘는 곳</p>
                   <div class="box__image">
@@ -186,7 +198,7 @@
             </li>
             <li class="item__content" >
               <a href="javascript:void(0)" >
-                <div class="content__box">
+                <div class="content__box back-to-position to-bottom delay-2">
                   <h4>문화</h4>
                   <p>파괴적인 창조자</p>
                   <div class="box__image">
@@ -197,7 +209,7 @@
             </li>
             <li class="item__content">
               <a href="javascript:void(0)">
-                <div class="content__box">
+                <div class="content__box back-to-position to-bottom delay-3">
                   <h4>펄어비스인</h4>
                   <p>꿈을 실현하는 사람들</p>
                   <div class="box__image">
@@ -208,7 +220,7 @@
             </li>
             <li class="item__content">
               <a href="javascript:void(0)">
-                <div class="content__box">
+                <div class="content__box back-to-position to-bottom delay-4">
                   <h4>소식</h4>
                   <p>생생한 펄어비스 이야기</p>
                   <div class="box__image">
