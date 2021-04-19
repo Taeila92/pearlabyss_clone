@@ -1,3 +1,5 @@
+'use strict';
+
 new Swiper('.banner .swiper-container',{
   slidesPerView:1,
   loop: true,
@@ -24,14 +26,13 @@ window.addEventListener('scroll', _.throttle(function(){
 }, 300))
 
 
-
 const spyEls = document.querySelectorAll('.scroll-spy');
 spyEls.forEach(function(spyEl){
   new ScrollMagic
     .Scene({
       triggerElement: spyEl, // 보여짐 여부를 감시할 요소를 지정
-      triggerHook: .8 // 뷰포트의 top 0  bottom 1 사이의 값 입력
+      triggerHook: .9 // 뷰포트의 top 0  bottom 1 사이의 값 입력
     })
     .setClassToggle(spyEl, 'show')
-    .addTo(new ScrollMagic.Controller());
+    .addTo(new ScrollMagic.Controller());    
 });

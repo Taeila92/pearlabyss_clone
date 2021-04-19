@@ -35,11 +35,11 @@ a {
 
 .back-to-position {
   opacity: 0;
-  transition: .2s;
+  transition: .5s;
 }
 
 .back-to-position.to-bottom {
-  transform: translateY(100px);
+  transform: translateY(50px);
 }
 
 .show .back-to-position {
@@ -50,16 +50,16 @@ a {
  transition-delay: 0s;
 }
 .show .back-to-position.delay-1 {
- transition-delay: .2s;
+ transition-delay: .05s;
 }
 .show .back-to-position.delay-2 {
- transition-delay: .4s;
+ transition-delay: .1s;
 }
 .show .back-to-position.delay-3 {
- transition-delay: .6s;
+ transition-delay: .15s;
 }
 .show .back-to-position.delay-4 {
- transition-delay: .8s;
+ transition-delay: .2s;
 }
 
 /* HEADER */
@@ -86,7 +86,7 @@ header .inner .logo {
   height: 68px;
   position: absolute;
   top: 0;
-  left: 20px;
+  left: 10px;
   bottom: 0;
   background-image: url('../images/index_logo_white.svg');
   background-size: 150px auto;
@@ -464,7 +464,7 @@ header .header_option .language li:first-child:before{
 }
 .container .culture .culture-items .item__content .content__image img{
   max-width: 100%;
-  transition: .4s;
+  transition: .8s;
 }
 .container .culture .culture-items .item__content p{
   margin: 16px 0;
@@ -509,6 +509,7 @@ header .header_option .language li:first-child:before{
   line-height: 1.4;
   color: #000;
   font-weight: 700;
+  cursor: pointer;
 }
 .footer .menu .item .item__contents{
 }
@@ -588,6 +589,7 @@ header .header_option .language li:first-child:before{
   justify-content: center;
   align-items: center;
   transition: .4s;
+  background-color: #fff;
 }
 .to-top:hover .material-icons{
   background-color: rgba(197, 197, 197, .5)
