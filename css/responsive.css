@@ -1,7 +1,46 @@
 @media screen and (max-width: 1024px) {
+    
+  header {
 
+  }
+  header .inner {
+    height: 58px;
+  }
+
+  header .inner:hover .menu-line{
+    width: 0;
+  }
+  header .inner .logo {
+    right: 0;
+    left: 0;
+    margin: auto;
+  }
+  header .inner .header__btn{
+    position: fixed;
+    width: 28px;
+    height: 19px;
+    top: 19px;
+    left: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  header .inner .header__btn{
+    cursor: pointer;
+  }
+  header .inner .header__btn .btn{
+    display: block;
+    width: 28px;
+    height: 2px;
+    background-color: #fff;
+  }
+  header .inner:hover{
+    cursor: auto;
+  }
+  header .inner .menu{
+    display:none;
+  }
 }
-
 @media screen and (max-width: 767px) {
 
 }
