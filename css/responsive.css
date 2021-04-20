@@ -1,18 +1,25 @@
 @media screen and (max-width: 1024px) {
     
   header {
-
+    height: 58px;
+    border: 1px solid black;
+  }
+  header:hover {
+    cursor: auto;
   }
   header .inner {
-    height: 58px;
+    height: 100%;
   }
-
+  header .inner:hover{
+  }
   header .inner:hover .menu-line{
     width: 0;
   }
   header .inner .logo {
     right: 0;
     left: 0;
+    top: 0;
+    bottom: 0;
     margin: auto;
   }
   header .inner .header__btn{
@@ -33,9 +40,6 @@
     width: 28px;
     height: 2px;
     background-color: #fff;
-  }
-  header .inner:hover{
-    cursor: auto;
   }
   header .inner .menu{
     display:none;
