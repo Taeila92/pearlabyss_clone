@@ -34,5 +34,5 @@ spyEls.forEach(function(spyEl){
       triggerHook: .9 // 뷰포트의 top 0  bottom 1 사이의 값 입력
     })
     .setClassToggle(spyEl, 'show')
-    .addTo(new ScrollMagic.Controller());    
+    .addTo(new ScrollMagic.Controller());
 });
