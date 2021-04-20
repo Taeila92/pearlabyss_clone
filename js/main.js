@@ -15,12 +15,15 @@ new Swiper('.banner .swiper-container',{
     nextEl: '.banner .swiper-next'
   }
 });
+const headerEl = document.querySelector('header')
 const menuBarEl = document.querySelector('header .inner')
 window.addEventListener('scroll', _.throttle(function(){
   console.log(window.scrollY)
   if(window.scrollY > 68){
+    headerEl.classList.add('white');
     menuBarEl.classList.add('white');
   }else{
+    headerEl.classList.remove('white');
     menuBarEl.classList.remove('white');
   }
 }, 300))

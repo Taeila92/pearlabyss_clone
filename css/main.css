@@ -5,21 +5,20 @@ body{
   color: #969696;
   box-sizing: border-box;
 }
-
 .inner{
   position: relative;
   max-width: 1920px;
+  right: 0;
+  left: 0;
   margin: auto;
-
 }
-
 a {
   text-decoration: none;
 }
-
-.body-wrap .menu-line {
+.body-wrap header .inner .menu-line {
   position: fixed;
   top:68px;
+  left: 0;
   width: 100%;
   height: 1px;
   z-index: 99;
@@ -27,21 +26,17 @@ a {
   opacity: .2;
   display: none;
 }
-
 .menu {
   display: flex;
   justify-content: center;
 }
-
 .back-to-position {
   opacity: 0;
   transition: .5s;
 }
-
 .back-to-position.to-bottom {
   transform: translateY(50px);
 }
-
 .show .back-to-position {
   opacity: 1;
   transform: translateY(0);
@@ -61,26 +56,30 @@ a {
 .show .back-to-position.delay-4 {
  transition-delay: .2s;
 }
-
+.white{
+  background-color: #fff;
+}
 /* HEADER */
 header{
   position: fixed;  
   top: 0;
   width: 100%;
   z-index: 9;
+  transition: .1s;
+}
+header:hover{
+  background-color: #fff;
 }
 header .inner {
   transition:  .2s;
 }
-
-header .inner:hover,
-header .inner.white {
+header .inner:hover{
   background-color: #fff;
   color: #000;
 }
-
+header:hover .inner .menu-line,
 header .inner:hover .menu-line{
-  display: inline;
+  display: block;
 }
 header .inner .logo {
   height: 68px;
@@ -96,6 +95,7 @@ header .inner .logo {
   height: 68px;
   outline: none;
 }
+header:hover .logo,
 header .inner:hover .logo,
 header .inner.white .logo{
   background-image: url('../images/index_logo_black.svg');
@@ -118,22 +118,21 @@ header .menu .item .item__contents{
   display: none;
   margin: 10px 0;
 }
+header:hover .inner .menu .item .item__contents,
 header .inner:hover .menu .item .item__contents{
-  display: block;
+  display: flex;
 }
+header:hover .inner .menu .item .item__name,
 header .inner:hover .menu .item .item__name,
 header .inner.white .menu .item .item__name
 {
   color: #000;
 }
-
 header .inner .menu .item:hover .item__name{
   border-bottom: 2px solid #000;
 }
-
 header .menu .item .item__contents>ul {
 }
-
 header .menu .item .item__contents ul li{
   padding: 6px 0;
   text-align: center;
@@ -141,24 +140,20 @@ header .menu .item .item__contents ul li{
   transition: .4s;
   color: #969696;
 }
-
 header .menu .item .item__contents ul li:hover{
   color: #000;
 }
-
 header .header_option {
   width: 110px;
   position: absolute;
   top: 0;
   right: 0;
 }
-
 header .header_option .language {
   display: flex;
   justify-content: center;
   line-height: 68px;
 }
-
 header .header_option .language li{
   cursor: pointer;
   color: #999;
@@ -168,10 +163,10 @@ header .header_option .language li{
   padding: 0 10px 0;
   margin-right: 10px;
 }
-
 header .header_option .language li:first-child{
   color: #fff;
 }
+header:hover .inner .header_option .language li:first-child,
 header .inner.white .header_option .language li:first-child,
 header .inner:hover .header_option .language li:first-child,
 header .header_option .language li:hover{
@@ -233,7 +228,6 @@ header .header_option .language li:first-child:before{
   transform: translateY(0);
   opacity: 1;
 }
-
 .banner .swiper-container .swiper-slide .title h3{
   font-size: 34px;
   color: #fff;
@@ -273,7 +267,6 @@ header .header_option .language li:first-child:before{
   transition: .4s;
   z-index: 1;
 }
-
 .banner .swiper-prev:hover,
 .banner .swiper-next:hover{
   background-color: rgba(255, 255, 255, .3);
@@ -355,8 +348,8 @@ header .header_option .language li:first-child:before{
   color: #6a6a6a;
 }
 
-/* MAIN MENU */
 
+/* MAIN MENU */
 .container .main-menu-wrap{
   max-width: 1440px;
   height: 576px;
@@ -460,7 +453,6 @@ header .header_option .language li:first-child:before{
   justify-content: center;
   align-items: center;
   overflow: hidden;
-
 }
 .container .culture .culture-items .item__content .content__image img{
   max-width: 100%;
@@ -484,7 +476,6 @@ header .header_option .language li:first-child:before{
 }
 .footer>.inner{
   padding: 60px 0 70px;
-
   max-width: 1220px;
   right: 0;
   bottom: 0;
@@ -514,7 +505,6 @@ header .header_option .language li:first-child:before{
 .footer .menu .item .item__contents{
 }
 .footer .menu .item .item__contents .inner{
-
 }
 .footer .menu .item .item__contents .inner li{
   padding: 8px 0;
@@ -529,7 +519,7 @@ header .header_option .language li:first-child:before{
 }
 
 
-
+/* FOOTER__COPYRIGHT */
 .footer .footer__copyright{
   border-top: 1px solid rgba(197, 197, 197, .5);
   padding: 32px 20px 30px;
