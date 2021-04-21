@@ -54,7 +54,7 @@
   }
   header .inner .header__btn .btn{
     display: block;
-    width: 2rem;
+    width: 28px;
     height: 2px;
     background-color: #fff;
     transition: .1s;
@@ -81,7 +81,7 @@
     width: 375px;
     height: 100%;
     left: -375px;
-    transition: .4s;
+    transition: .2s;
   }
   header .inner .left-menu.active {
     left: 0;
@@ -126,10 +126,15 @@
     border-bottom: 2px solid rgba(199, 199, 199, 0.3);
   }
   header .inner .menu .item .item__contents{
-  
+    height: 0;
+    transition: .4s;
   }
   header .inner:hover .menu .item .item__contents{
     display: none;
+  }
+  header .inner .menu .item:hover .item__contents{
+    display: block;
+    height: auto;
   }
   header .inner .header_option{
     width: 25px;

@@ -100,6 +100,9 @@ header .inner:hover .logo,
 header .inner.white .logo{
   background-image: url('../images/index_logo_black.svg');
 }
+header .inner .left-menu a img {
+  display: none;
+}
 header .menu .item{
 
 }
