@@ -17,7 +17,6 @@ new Swiper('.banner .swiper-container',{
 });
 const menuBarEl = document.querySelector('header .inner')
 window.addEventListener('scroll', _.throttle(function(){
-  console.log(window.scrollY)
   if(window.scrollY > 68){
     menuBarEl.classList.add('white');
   }else{
