@@ -23,3 +23,11 @@ headerBtnToggleEl.addEventListener('click', function(){
 headerLanguageEl.addEventListener('click', function(){
   headerLanguageEl.classList.toggle('active')
 })
+
+const itemBtnEls =document.querySelectorAll('.item')
+
+itemBtnEls.forEach(itemBtnEl => {
+  itemBtnEl.addEventListener('click',() => {
+    itemBtnEl.classList.toggle('active')
+  })
+})

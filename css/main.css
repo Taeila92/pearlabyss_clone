@@ -104,7 +104,6 @@ header .inner .left-menu a img {
   display: none;
 }
 header .menu .item{
-
 }
 header .menu .item .item__name{
   padding: 0 50px;
@@ -118,11 +117,14 @@ header .menu .item .item__name{
 }
 header .menu .item .item__contents{
   align-items: center;
-  display: none;
-  margin: 10px 0;
+  opacity: 0;
+  transition: .4s;
+  max-height: 0;
+  overflow: hidden;
 }
 header .inner:hover .menu .item .item__contents{
-  display: block;
+  max-height: 342px;
+  opacity: 1;
 }
 header .inner:hover .menu .item .item__name,
 header .inner.white .menu .item .item__name
@@ -135,6 +137,7 @@ header .inner .menu .item:hover .item__name{
 }
 
 header .menu .item .item__contents>ul {
+  margin: 20px 0 40px;
 }
 
 header .menu .item .item__contents ul li{

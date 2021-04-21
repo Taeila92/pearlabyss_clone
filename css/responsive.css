@@ -94,6 +94,7 @@
     left: 0;
     right: 0;
     margin: 0 auto;
+    display: block;
   }
   header .inner .menu{
     position: absolute;
@@ -126,15 +127,14 @@
     border-bottom: 2px solid rgba(199, 199, 199, 0.3);
   }
   header .inner .menu .item .item__contents{
-    height: 0;
-    transition: .4s;
+  }
+  header .inner .menu .item.active .item__contents{
+    max-height: 100px;
+    opacity: 1;
   }
   header .inner:hover .menu .item .item__contents{
-    display: none;
-  }
-  header .inner .menu .item:hover .item__contents{
-    display: block;
     height: auto;
+    opacity: 1;
   }
   header .inner .header_option{
     width: 25px;
