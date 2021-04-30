@@ -36,8 +36,8 @@ const btnEl1 = document.querySelector('.culture .btn.culture1')
 const btnEl2 = document.querySelector('.culture .btn.culture2')
 
 btnEl1.addEventListener('click', function(){
-  document.querySelector('.culture .inner').style.transform = 'translateX(0vw)'
+  document.querySelector('.inner .culture-items').style.transform = 'translateX(0vw)'
 })
 btnEl2.addEventListener('click', function(){
-  document.querySelector('.culture .inner').style.transform = 'translateX(-100vw)'
+  document.querySelector('.inner .culture-items').style.transform = 'translateX(-100vw)'
 })
