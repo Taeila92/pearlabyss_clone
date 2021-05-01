@@ -197,18 +197,13 @@ header{
   z-index: 9;
   transition: .1s;
 }
-header:hover{
-  background-color: #fff;
-}
 header .inner {
   transition:  .2s;
 }
-
 header .inner.white {
   background-color: #fff;
   color: #000;
 }
-
 header .inner .logo {
   height: 68px;
   position: absolute;
