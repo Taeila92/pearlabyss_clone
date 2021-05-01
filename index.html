@@ -30,8 +30,10 @@
   <!-- reset css-->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"> 
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/responsive.css">
 
-  <script defer src="/js/main.js"></script>
+  <script defer src="./js/responsive.js"></script>
+  <script defer src="./js/main.js"></script>
 
   <title>펄어비스 공식 홈페이지 | Pearl Abyss</title>
 </head>
@@ -49,68 +51,71 @@
           <span class="btn line2"></span>
           <span class="btn line3"></span>
         </div>
-        <ul class="menu">
-          <li class="item">
-            <div class="item__name">소개</div>
-            <div class="item__contents">
-              <ul class="inner">
-                <li>펄어비스 소개</li>
-                <li>연구소</li>
-              </ul>
-            </div>
-          </li>
-          <li class="item">
-            <div class="item__name">게임</div>
-            <div class="item__contents">
-              <ul class="inner">
-                <li>검은사막</li>
-                <li>검은사막 모바일</li>
-                <li>섀도우 아레나</li>
-                <li>붉은사막</li>
-                <li>도깨비</li>
-                <li>플랜 8</li>
-              </ul>
-            </div>
-          </li>
-          <li class="item">
-            <div class="item__name">미디어</div>
-            <div class="item__contents">
-              <ul class="inner">
-                <li>보도자료</li>
-                <li>미디어 행사</li>
-              </ul>
-            </div>
-          </li>
-          <li class="item">
-            <div class="item__name">문화</div>
-            <div class="item__contents">
-              <ul class="inner">
-                <li>기업문화</li>
-                <li>복지</li>
-                <li>펄어비스인</li>
-                <li>펄어비스 소식</li>
-              </ul>
-            </div>
-          </li>
-          <li class="item">
-            <div class="item__name">채용</div>
-            <div class="item__contents">
-              <ul class="inner">
-                <li>채용소개</li>
-                <li>지원하기</li>
-              </ul>
-            </div>
-          </li>
-          <li class="item">
-            <div class="item__name">투자정보</div>
-            <div class="item__contents">
-              <ul class="inner">
-                <li>기업지배구조</li>
-                <li>주가정보</li>
-                <li>재무정보</li>
-                <li>공시・공고</li>
-                <li>IR 자료</li>
-              </ul>
+        <div class="left-menu">
+          <a href="/"><img src="./images/index_logo_black.svg" alt=""></a>
+          <ul class="menu">
+            <li class="item">
+              <div class="item__name">소개</div>
+              <div class="item__contents">
+                <ul class="inner">
+                  <li>펄어비스 소개</li>
+                  <li>연구소</li>
+                </ul>
+              </div>
+            </li>
+            <li class="item">
+              <div class="item__name">게임</div>
+              <div class="item__contents">
+                <ul class="inner">
+                  <li>검은사막</li>
+                  <li>검은사막 모바일</li>
+                  <li>섀도우 아레나</li>
+                  <li>붉은사막</li>
+                  <li>도깨비</li>
+                  <li>플랜 8</li>
+                </ul>
+              </div>
+            </li>
+            <li class="item">
+              <div class="item__name">미디어</div>
+              <div class="item__contents">
+                <ul class="inner">
+                  <li>보도자료</li>
+                  <li>미디어 행사</li>
+                </ul>
+              </div>
+            </li>
+            <li class="item">
+              <div class="item__name">문화</div>
+              <div class="item__contents">
+                <ul class="inner">
+                  <li>기업문화</li>
+                  <li>복지</li>
+                  <li>펄어비스인</li>
+                  <li>펄어비스 소식</li>
+                </ul>
+              </div>
+            </li>
+            <li class="item">
+              <div class="item__name">채용</div>
+              <div class="item__contents">
+                <ul class="inner">
+                  <li>채용소개</li>
+                  <li>지원하기</li>
+                </ul>
+              </div>
+            </li>
+            <li class="item">
+              <div class="item__name">투자정보</div>
+              <div class="item__contents">
+                <ul class="inner">
+                  <li>기업지배구조</li>
+                  <li>주가정보</li>
+                  <li>재무정보</li>
+                  <li>공시・공고</li>
+                  <li>IR 자료</li>
+                </ul>
+              </div>
             </div>
           </li>
         </ul>
@@ -185,8 +190,10 @@
             <li class="item__content">
               <a href="javascript:void(0)">
                 <div class="content__box back-to-position to-bottom delay-0">
-                  <h4>펄어비스</h4>
-                  <p>우리의 비전과 가치</p>
+                  <div class="box__text">
+                    <h4>펄어비스</h4>
+                    <p>우리의 비전과 가치</p>
+                  </div>
                   <div class="box__image">
                     <img src="./images/introduction1.jpg" alt="">
                   </div>
@@ -196,8 +203,10 @@
             <li class="item__content">
               <a href="javascript:void(0)">
                 <div class="content__box back-to-position to-bottom delay-1">
-                  <h4>연구소</h4>
-                  <p>한계를 뛰어넘는 곳</p>
+                  <div class="box__text">
+                    <h4>연구소</h4>
+                    <p>한계를 뛰어넘는 곳</p>
+                </div>
                   <div class="box__image">
                     <img src="./images/introduction2.jpg" alt="">
                   </div>
@@ -207,8 +216,10 @@
             <li class="item__content" >
               <a href="javascript:void(0)" >
                 <div class="content__box back-to-position to-bottom delay-2">
-                  <h4>문화</h4>
-                  <p>파괴적인 창조자</p>
+                  <div class="box__text">
+                    <h4>문화</h4>
+                    <p>파괴적인 창조자</p>
+                </div>
                   <div class="box__image">
                     <img src="./images/introduction3.jpg" alt="">
                   </div>
@@ -218,8 +229,10 @@
             <li class="item__content">
               <a href="javascript:void(0)">
                 <div class="content__box back-to-position to-bottom delay-3">
-                  <h4>펄어비스인</h4>
-                  <p>꿈을 실현하는 사람들</p>
+                  <div class="box__text">
+                    <h4>펄어비스인</h4>
+                    <p>꿈을 실현하는 사람들</p>
+                </div>
                   <div class="box__image">
                     <img src="./images/introduction4.jpg" alt="">
                   </div>
@@ -229,8 +242,10 @@
             <li class="item__content">
               <a href="javascript:void(0)">
                 <div class="content__box back-to-position to-bottom delay-4">
-                  <h4>소식</h4>
-                  <p>생생한 펄어비스 이야기</p>
+                  <div class="box__text">
+                    <h4>소식</h4>
+                    <p>생생한 펄어비스 이야기</p>
+                </div>
                   <div class="box__image">
                     <img src="./images/introduction5.jpg" alt="">
                   </div>
@@ -241,9 +256,9 @@
         </div>
       </div>
 
-
+      <!-- CULTURE -->
       <div class="culture scroll-spy">
-        <div class="inner">
+        <div class=" inner">
           <ul class="culture-items">
             <li class="item__content back-to-position to-bottom delay-0">
               <a href="javascript:void(0)">
@@ -282,6 +297,10 @@
               </a>
             </li>
           </ul>
+          <div class="btn-box radio">
+            <input type="radio" class="btn culture1" name="btn" checked>
+            <input type="radio" class="btn culture2" name="btn">
+          </div>
         </div>
       </div>
 
@@ -377,12 +396,13 @@
         <a href="/" class="logo"></a>
         <p class="copyright">Copyright © Pearl Abyss Corp. All Rights Reserved</p>
       </div>
-    </div>
-    <ul class="icons">
-      <li><a href="javascript:void(0)" style="background-image: url('./images/icn_footer_facebook_round.svg');"></a></li>
-      <li><a href="javascript:void(0)" style="background-image: url('./images/icn_footer_youtube_round.svg');"></a></li>
-      <li><a href="javascript:void(0)" style="background-image: url('./images/icn_footer_linkedin_round.svg');"></a></li>
-    </ul>
+      <ul class="icons">
+        <li><a href="javascript:void(0)" style="background-image: url('./images/icn_footer_facebook_round.svg');"></a></li>
+        <li><a href="javascript:void(0)" style="background-image: url('./images/icn_footer_youtube_round.svg');"></a></li>
+        <li><a href="javascript:void(0)" style="background-image: url('./images/icn_footer_linkedin_round.svg');"></a></li>
+      </ul>
+   </div>
+  </div>
   </section>
   <div class="to-top">
     <div class="material-icons">arrow_upward</div>
