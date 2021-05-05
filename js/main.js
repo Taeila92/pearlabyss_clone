@@ -17,7 +17,9 @@ new Swiper('.banner .swiper-container',{
 });
 const headerEl = document.querySelector('header')
 const menuBarEl = document.querySelector('header .inner')
+const toTopEl = document.querySelector('.to-top');
 window.addEventListener('scroll', _.throttle(function(){
+  console.log(window.scrollY);
   if(window.scrollY > 68){
     headerEl.classList.add('white');
     menuBarEl.classList.add('white');
@@ -25,8 +27,12 @@ window.addEventListener('scroll', _.throttle(function(){
     headerEl.classList.remove('white');
     menuBarEl.classList.remove('white');
   }
+  if(window.scrollY > 1800){ 
+    toTopEl.classList.add('up')
+  }else{
+    toTopEl.classList.remove('up')
+  }
 }, 300))
-
 
 const spyEls = document.querySelectorAll('.scroll-spy');
 spyEls.forEach(function(spyEl){
@@ -39,3 +45,8 @@ spyEls.forEach(function(spyEl){
     .addTo(new ScrollMagic.Controller());
 });
 
+toTopEl.addEventListener('click',function(){
+  gsap.to(window, .5,{
+    scrollTo: 0
+  });
+});
